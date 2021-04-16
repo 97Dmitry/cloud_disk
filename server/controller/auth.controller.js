@@ -11,7 +11,6 @@ class AuthController {
       if (!errors.isEmpty()) {
         return response.status(400).json(errors)
       }
-
       const {email, password} = request.body
       const candidate = await User.findOne({email})
       if (candidate) {
