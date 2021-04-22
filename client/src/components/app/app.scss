@@ -1,5 +1,12 @@
 @import "../../assets/style/variablesColor.scss";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $font-color;
+}
+
 body {
   display: flex;
   flex-direction: column;
